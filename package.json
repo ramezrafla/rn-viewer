@@ -4,8 +4,7 @@
   "description": "A react native interface to preview documents",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
-  "types": "lib/typescript/index.d.ts",
-  "react-native": "src/index",
+  "react-native": "lib/module/index",
   "source": "src/index",
   "files": [
     "src",
@@ -25,9 +24,7 @@
     "jest/build"
   ],
   "scripts": {
-    "build:mock": "tsc --build jest",
-    "prepare": "bob build && yarn build:mock",
-    "release": "yarn prepare && npx semantic-release"
+    "build:mock": "tsc --build jest"
   },
   "codegenConfig": {
     "name": "rndocumentviewerCGen",
